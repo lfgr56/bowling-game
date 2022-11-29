@@ -41,7 +41,7 @@ public class BowlingTest {
 
   @Test
   public void oneStrike() throws Exception{
-    g.roll(10); //strike
+    rollStrike();
     g.roll(3);
     g.roll(4);
     rollMany(16,0);
@@ -59,4 +59,7 @@ public class BowlingTest {
     g.roll(5);
   }
 
+  private void rollStrike() {
+    g.roll(10);
+  }
 }
