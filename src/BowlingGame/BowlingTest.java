@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 import javax.swing.JRootPane;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class BowlingTest {
@@ -28,6 +29,7 @@ public class BowlingTest {
     assertEquals(20,g.score());
   }
 
+  @Ignore
   @Test
   public void oneSpare() throws Exception{
     g.roll(5);
