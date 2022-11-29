@@ -9,4 +9,10 @@ public class BowlingTest {
     Game g = new Game();
   }
 
+  @Test
+  public void canRoll() throws Exception {
+    Game g = new Game();
+    g.roll(0);
+  }
+
 }
