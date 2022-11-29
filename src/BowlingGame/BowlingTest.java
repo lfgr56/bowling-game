@@ -29,7 +29,6 @@ public class BowlingTest {
     assertEquals(20,g.score());
   }
 
-  @Ignore
   @Test
   public void oneSpare() throws Exception{
     g.roll(5);
