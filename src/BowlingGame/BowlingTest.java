@@ -3,6 +3,7 @@ package BowlingGame;
 
 import static org.junit.Assert.assertEquals;
 
+import javax.swing.JRootPane;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -25,6 +26,17 @@ public class BowlingTest {
   public void allOnes() throws Exception {
     rollMany(20, 1);
     assertEquals(20,g.score());
+  }
+
+  @Test
+  public void oneSpare() throws Exception{
+    g.roll(5);
+    g.roll(5);
+    g.roll(3);
+    rollMany(17,0);
+
+    assertEquals(16,g.score());
+
   }
 
   private void rollMany(int n, int pins) {
