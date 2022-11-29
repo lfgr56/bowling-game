@@ -31,8 +31,7 @@ public class BowlingTest {
 
   @Test
   public void oneSpare() throws Exception{
-    g.roll(5);
-    g.roll(5);
+    rollSpare();
     g.roll(3);
     rollMany(17,0);
 
@@ -44,6 +43,11 @@ public class BowlingTest {
     for (int i = 0; i < n; i++) {
       g.roll(pins);
     }
+  }
+
+  private void rollSpare() {
+    g.roll(5);
+    g.roll(5);
   }
 
 }
