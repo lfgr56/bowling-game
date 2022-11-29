@@ -3,9 +3,7 @@ package BowlingGame;
 
 import static org.junit.Assert.assertEquals;
 
-import javax.swing.JRootPane;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class BowlingTest {
@@ -46,6 +44,12 @@ public class BowlingTest {
     g.roll(4);
     rollMany(16,0);
     assertEquals(24, g.score());
+  }
+
+  @Test
+  public void perfectGame() throws Exception{
+    rollMany(12,10);
+    assertEquals(300,g.score());
   }
 
   private void rollMany(int n, int pins) {
